@@ -1,0 +1,81 @@
+{
+    // =========================================================
+    // 1. Python Environment
+    // =========================================================
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    // =========================================================
+    // 2. Pylance - IntelliSense / Type Checking
+    // =========================================================
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.diagnosticMode": "workspace",
+    // Function return type hints
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    // Disable variable type hints to reduce visual noise
+    "python.analysis.inlayHints.variableTypes": false,
+    // =========================================================
+    // 3. Ruff - Lint / Format / Import Organization
+    // =========================================================
+    "ruff.enable": true,
+    "ruff.organizeImports": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.columnSelection": false,
+        "editor.autoClosingBrackets": "always",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    // =========================================================
+    // 4. Editor Appearance / Experience
+    // =========================================================
+    "editor.fontSize": 18,
+    "editor.tabSize": 4,
+    "editor.guides.bracketPairs": true,
+    "editor.rulers": [
+        88,
+        120
+    ],
+    "editor.wordWrap": "off",
+    "editor.minimap.enabled": true,
+    "editor.snippetSuggestions": "top",
+    "files.autoSave": "onFocusChange",
+    // =========================================================
+    // 5. File Explorer / Search Exclusions
+    // =========================================================
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.venv": true,
+        "**/.conda": true,
+        "**/.env": false
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.venv": true,
+        "**/.conda": true
+    },
+    // =========================================================
+    // 6. Debugging
+    // =========================================================
+    "debug.toolBarLocation": "docked",
+    "debug.inlineValues": "on",
+    // =========================================================
+    // 7. Python Testing
+    // =========================================================
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": [
+        "tests"
+    ]
+}
