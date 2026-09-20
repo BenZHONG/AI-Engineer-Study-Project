@@ -18,14 +18,31 @@
     // =========================================================
     // 3. Ruff - Lint / Format / Import Organization
     // =========================================================
+    // Enable Ruff
     "ruff.enable": true,
+    // Organize imports with Ruff
     "ruff.organizeImports": true,
+    // Format files when saving
     "editor.formatOnSave": true,
+    // Do not format when pasting
     "editor.formatOnPaste": false,
+    // ---------------------------------------------------------
+    // Python (.py)
+    // ---------------------------------------------------------
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.columnSelection": false,
         "editor.autoClosingBrackets": "always",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    // ---------------------------------------------------------
+    // Jupyter Notebook (.ipynb)
+    // ---------------------------------------------------------
+    "[jupyter]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.codeActionsOnSave": {
             "source.fixAll.ruff": "explicit",
             "source.organizeImports.ruff": "explicit"
@@ -44,6 +61,7 @@
     "editor.wordWrap": "off",
     "editor.minimap.enabled": true,
     "editor.snippetSuggestions": "top",
+    // Auto save
     "files.autoSave": "onFocusChange",
     // =========================================================
     // 5. File Explorer / Search Exclusions
@@ -55,6 +73,7 @@
         "**/*.pyc": true,
         "**/.venv": true,
         "**/.conda": true,
+        // Keep .env visible
         "**/.env": false
     },
     "search.exclude": {
