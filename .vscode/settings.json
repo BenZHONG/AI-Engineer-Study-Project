@@ -7,7 +7,7 @@
     // =========================================================
     // 2. Pylance - IntelliSense / Type Checking
     // =========================================================
-    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.typeCheckingMode": "standard",
     "python.analysis.autoImportCompletions": true,
     "python.analysis.completeFunctionParens": true,
     "python.analysis.diagnosticMode": "workspace",
@@ -18,11 +18,11 @@
     // =========================================================
     // 3. Ruff - Lint / Format / Import Organization
     // =========================================================
-    // Enable Ruff
+    // Enable Ruff extension
     "ruff.enable": true,
     // Organize imports with Ruff
     "ruff.organizeImports": true,
-    // Format files when saving
+    // Global format on save
     "editor.formatOnSave": true,
     // Do not format when pasting
     "editor.formatOnPaste": false,
@@ -31,6 +31,7 @@
     // ---------------------------------------------------------
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
         "editor.columnSelection": false,
         "editor.autoClosingBrackets": "always",
         "editor.codeActionsOnSave": {
@@ -41,8 +42,10 @@
     // ---------------------------------------------------------
     // Jupyter Notebook (.ipynb)
     // ---------------------------------------------------------
+    "notebook.formatOnSave.enabled": true,
     "[jupyter]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.fixAll.ruff": "explicit",
             "source.organizeImports.ruff": "explicit"
