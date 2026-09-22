@@ -45,11 +45,11 @@
     "notebook.formatOnSave.enabled": true,
     "[jupyter]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll.ruff": "explicit",
-            "source.organizeImports.ruff": "explicit"
-        }
+        // "editor.formatOnSave": true,
+        // "editor.codeActionsOnSave": {
+        //     "source.fixAll.ruff": "explicit",
+        //     "source.organizeImports.ruff": "explicit"
+        // }
     },
     // =========================================================
     // 4. Editor Appearance / Experience
