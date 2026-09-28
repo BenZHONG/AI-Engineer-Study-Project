@@ -109,6 +109,7 @@ opentelemetry-semantic-conventions==0.65b0
 orjson==3.12.0
 overrides==7.7.0
 packaging==26.3
+pandas==3.0.6
 pandocfilters==1.5.1
 parso==0.8.7
 pinecone==10.0.0

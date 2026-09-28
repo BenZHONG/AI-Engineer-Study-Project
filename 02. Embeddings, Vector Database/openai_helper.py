@@ -45,11 +45,16 @@ def get_response_system_user(system_prompt, user_prompt):
 
 
 # Define a create_embeddings function
-def create_embeddings(texts):
+def create_embeddings_with_model(texts, model="text-embedding-3-small"):
     response = client.embeddings.create(
-        model="text-embedding-3-small",
+        model=model,
         input=texts,
     )
     response_dict = response.model_dump()
 
     return [data["embedding"] for data in response_dict["data"]]
+
+
+# Define a create_embeddings function
+def create_embeddings(texts):
+    return create_embeddings_with_model(texts=texts)
