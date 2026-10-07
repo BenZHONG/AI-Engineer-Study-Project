@@ -35,21 +35,19 @@
         "editor.columnSelection": false,
         "editor.autoClosingBrackets": "always",
         "editor.codeActionsOnSave": {
-            "source.fixAll.ruff": "explicit",
-            "source.organizeImports.ruff": "explicit"
+            "source.organizeImports.ruff": "explicit",
+            "source.fixAll.ruff": "explicit"
         }
     },
     // ---------------------------------------------------------
     // Jupyter Notebook (.ipynb)
     // ---------------------------------------------------------
+    // Notebook (.ipynb) 文件保存时的配置（注意：必须使用 notebook 开头的全局键）
     "notebook.formatOnSave.enabled": true,
-    "[jupyter]": {
-        "editor.defaultFormatter": "charliermarsh.ruff",
-        // "editor.formatOnSave": true,
-        // "editor.codeActionsOnSave": {
-        //     "source.fixAll.ruff": "explicit",
-        //     "source.organizeImports.ruff": "explicit"
-        // }
+    "notebook.defaultFormatter": "charliermarsh.ruff",
+    "notebook.codeActionsOnSave": {
+        "source.organizeImports": "explicit",
+        "source.fixAll": "explicit"
     },
     // =========================================================
     // 4. Editor Appearance / Experience
