@@ -40,3 +40,5 @@ DOCUMENT_CONFIG = {
         "allowed_roles": ["hr_manager", "it_admin", "security_admin"],
     },
 }
+
+DOCUMENTS_PATH = "../documents"
